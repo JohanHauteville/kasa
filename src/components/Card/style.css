@@ -1,0 +1,38 @@
+.logement-card{
+    height: 340px;
+    position: relative;
+    flex-basis: calc(33.33% - 50px);
+    border-radius: 10px;
+}
+
+.logement-card img{
+    object-fit: cover;
+    width: 100%;
+    /* max-width: 400px; */
+    /* min-width: 240px; */
+    height: 100%;
+    border-radius: 10px;
+}   
+
+.logement-card::after{
+    content: '';
+    border-radius: 10px ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: -webkit-linear-gradient( bottom , #656565, rgba(255,255,255,0));
+    background: linear-gradient(to top, #656565, rgba(255,255,255,0));
+}
+
+.logement-card p{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    max-width: 330px;
+    left: 14px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}

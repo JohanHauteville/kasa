@@ -1,0 +1,11 @@
+.card-section{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    padding: 50px;
+    gap: 5%;
+    row-gap: 50px;
+}
