@@ -1,9 +1,14 @@
-
+import Banner from "../../components/Banner"
+import './style.css'
 
 function Home(){
 
     return(
-        <p>✏️ Page d'Accueil en cours de construction ✏️</p>
+        <main>
+            <Banner />
+            <p>✏️ Page d'Accueil en cours de construction ✏️</p> 
+        </main>
+
     )
 }
 

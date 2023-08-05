@@ -1,0 +1,22 @@
+h1{
+    /* font-family: 'Montserrat'; */
+    font-weight: 500;
+    font-size: 48px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    color: #fff;
+    text-align: center;
+    width: 90%;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 25px;
+    filter: brightness(75%);
+}

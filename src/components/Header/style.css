@@ -14,8 +14,13 @@ nav{
 }
 
 .navLink{
+    /* font-size: 3.5vw; */
     font-size: 24px;
+    font-weight: 500;
     margin-left:15%;
     color: #FF6060;
     text-decoration: none;
 }
+
+
+
