@@ -1,6 +1,15 @@
+import Banner from "../../components/Banner"
+import bannerAbout from "../../assets/about-background.png"
+import Collapse from "../../components/Collapse"
+import './style.css'
+
 function APropos() {
     return(
-        <p>✏️ Page a propos en cours de construction ✏️</p>
+        <main>
+            <Banner picture={bannerAbout} title="" />
+            <Collapse title="ceci est un test" content="Ma sweetie c'est la plus belle du monde entier. J'ai énormément de chance d'être avec elle." />
+        </main>
+
     )
 }
 
