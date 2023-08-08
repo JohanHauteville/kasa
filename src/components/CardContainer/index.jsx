@@ -6,10 +6,9 @@ function CardContainer(){
     return(
         <section className='card-section'>
             {annonces.map( annonce => {
-                return <Card title = {annonce.title} picture={annonce.pictures} />
+                return <Card key={annonce.id} id={annonce.id} title = {annonce.title} picture={annonce.cover} />
             })}
         </section>
-     
     )
 }
 

@@ -2,14 +2,19 @@ import Banner from "../../components/Banner"
 import bannerAbout from "../../assets/about-background.png"
 import Collapse from "../../components/Collapse"
 import './style.css'
+import collapses from '../../assets/collapses.json'
 
 function APropos() {
     return(
-        <main>
+        <main className="a-propos-page">
             <Banner picture={bannerAbout} title="" />
-            <Collapse title="ceci est un test" content="Ma sweetie c'est la plus belle du monde entier. J'ai énormément de chance d'être avec elle." />
+            {
+                collapses &&
+                collapses.map( collapse => {
+                    return <Collapse key={collapse.title} title={collapse.title} content={collapse.content} />
+                })
+            }
         </main>
-
     )
 }
 

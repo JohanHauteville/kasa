@@ -12,6 +12,7 @@ h1{
 }
 .banner{
     position: relative;
+    width: 100%;
 }
 .banner img{
     height: 220px;

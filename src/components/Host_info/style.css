@@ -1,0 +1,12 @@
+.host__informations{
+    display: flex;
+    text-align: right;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.host__informations--img{
+    width: 64px;
+    height: 64px;
+    border-radius: 60px;
+}
