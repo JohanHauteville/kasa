@@ -5,7 +5,6 @@ function Rating({ rate }){
     return(
         <div className='rating'>
             {range.map(rangeElem => {
-                console.log(rate)
                 return rate >= rangeElem ? (
                     <i key={rangeElem} className="fa-solid fa-star fa-star--colored"></i>
                 ) : (

@@ -1,6 +1,7 @@
 .logement-page{
     display:block;
     height: 100vh;
+    padding-top: 0;
 }
 
 .logement__cover{
@@ -25,6 +26,7 @@
 }
 
 .logement__tags{
+    margin: 20px 0;
     display: flex;
     gap: 20px;
 }
@@ -39,6 +41,7 @@
     align-items: center;
     justify-content: center;
     font-size: 14px;
+    margin: 0;
     
     /* text-align: center; */
 }
@@ -48,8 +51,42 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    height: 100px;
+    /* align-items: center; */
+    /* height: 100px; */
 
 }
 
+.host-and-rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.body-informations{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.body-informations .collapse{
+    width: 47%;
+}
+
+.body-informations .collapse h3{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 20px;
+    border-radius: 10px;
+}
+
+.body-informations .collapse__content{
+    font-size: 18px;
+    line-height: 25px;
+    min-height: 200px;
+}
+
+.body-informations .collapse__content p{
+    font-size: 18px;
+    font-weight: 400;
+}

@@ -13,7 +13,15 @@ function Collapse({ title, content}){
                 <i className="fa-solid fa-chevron-up"></i>
             )}
 
-            {stateCollapse && <div className='collapse__content'>{content}</div>}
+            {stateCollapse &&  typeof(content)==="string" && <div className='collapse__content'>{content}</div>}
+
+            {stateCollapse && Array.isArray(content) && 
+                    <div className='collapse__content'>
+                    {content.map(element => {
+                        return <p key={element}>{element}</p>
+                    })}
+                    </div>
+            }
         </div>
     )
 
@@ -23,8 +31,7 @@ function Collapse({ title, content}){
 }
 
 Collapse.propTypes = {
-    title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired
 }
 
 

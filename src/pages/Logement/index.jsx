@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import annonces from '../../assets/annonces.json'
 import Rating from '../../components/Rating'
 import HostInfo from '../../components/Host_info'
+import Collapse from '../../components/Collapse'
 
 function Logement(){
     const {id} = useParams()
@@ -23,11 +24,16 @@ function Logement(){
                         }
                     </section>
                 </div>
-                <div>
+                <div className='host-and-rating'>
                     <HostInfo name={logement.host.name} picture={logement.host.picture} />
                     <Rating rate={logement.rating}/>
                 </div>
             </section>
+            <section className='body-informations'>
+                <Collapse title="Description" content={logement.description} />
+                <Collapse title="Équipements" content={logement.equipments} />
+            </section>
+
 
         </main>
         
