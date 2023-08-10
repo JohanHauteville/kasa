@@ -9,3 +9,8 @@
     gap: 5%;
     row-gap: 50px;
 }
+
+.card-section::after{
+    content: "";
+    flex: auto;
+}
