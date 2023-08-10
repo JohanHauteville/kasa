@@ -8,9 +8,9 @@ function Collapse({ title, content}){
         <div onClick={invertStateCollapse} className="collapse">
             <h3>{title}</h3>
             {stateCollapse ? (
-                <i className="fa-solid fa-chevron-down"></i>
-            ) : (
                 <i className="fa-solid fa-chevron-up"></i>
+            ) : (
+                <i className="fa-solid fa-chevron-down"></i>
             )}
 
             {stateCollapse &&  typeof(content)==="string" && <div className='collapse__content'>{content}</div>}

@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-around;
     color: #FF6060;
-    height: 90vh;
+    min-height: 60vh;
 }
 .error-page div{
     display: flex;

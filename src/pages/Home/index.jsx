@@ -7,7 +7,7 @@ import './style.css'
 function Home(){
 
     return(
-        <main>
+        <main className="home-page">
             <Banner picture={bannerHome} title="Chez vous, partout et ailleurs" />
             <CardContainer />
         </main>
