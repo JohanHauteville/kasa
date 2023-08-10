@@ -1,0 +1,42 @@
+.carrousel{
+    position: relative;
+}
+
+.carrousel__buttons,.carrousel__right-button,.carrousel__left-button, .carrousel__pagination{
+    position: absolute;
+}
+
+.carrousel__buttons{
+
+    color: #fff;
+    font-size: 92px;
+    top: 38%;
+    width: 100%;
+}
+.carrousel__left-button{
+    left: 20px;
+}
+
+.carrousel__right-button{
+    right: 20px;
+}
+
+.carrousel__pagination{
+    bottom: 20px;
+    width: 100%;
+    /* left: 50%; */
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+.logement__cover{
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    text-align: left;
+    object-fit: cover;
+}
