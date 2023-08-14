@@ -1,10 +1,53 @@
-# Getting Started with Create React App
+![alt text](https://github.com/JohanHauteville/src/assets/logo.png?raw=true)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Projet React : Kasa - Location d'appartements entre particuliers
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Ce projet est le onzième de la formation de développeur d'application React de chez OpenCLassrooms.
+
+Dans ce projet on nous demande de lancer la refonte d'un site web en partant de maquettes disponibles à cet adresse :
+https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design?node-id=4%3A1
+
+Ainsi que de Coding quidelines:
+https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf
+
+Et d'un fichier JSON pour simuler le BackEnd:
+https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json
+
+## Outils et Contraintes techniques
+
+### Outils standards
+
+- Create React App
+- React Routeur
+- Styling : CSS
+- Pas de librairie React Externe
+
+### Contraintes techniques
+
+#### React:
+
+- Découpage en composants modulaires et réutilisables
+- Un composant par fichier
+- Structure logique des différents fichiers
+- Utilisation des props entre les composants
+- Utilisation du state dans les composants quand c'est nécessaire
+- Gestion des événements
+- Listes: React permet de faire des choses vraiment intéressantes avec les listes, en itérant dessus, par exemple avec map. Il faut les utiliser autant que possible.
+
+Il est également recommandé, mais pas imposé, d'utiliser des composants fonctionnels plutôt que des composants classes.
+
+#### React Router:
+
+- Les paramètres des routes sont gérés par React Router dans l'URL pour récupérer les informations de chaque logement.
+- Il existe une page par route
+- La page 404 est renvoyée pour chaque route inexistante, ou si une valeur présente dans l'URL ne fait pas partie des données renseignées.
+- La logique du routeur est réunie dans une seul fichier
+
+## Scripts disponibles
+
+Dans ce projet, vous pouvez lancer:
 
 ### `yarn start`
 
