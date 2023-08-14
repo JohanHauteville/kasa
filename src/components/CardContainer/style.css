@@ -24,6 +24,8 @@
     .card-section{
         grid-template-columns: 1fr;
         gap: 20px;
-        padding: 20px;
+        padding: 0px;
+        margin-top: 20px;
+        background-color: #fff;
     }
  }

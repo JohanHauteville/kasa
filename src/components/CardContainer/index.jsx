@@ -3,6 +3,7 @@ import Card from "../../components/Card"
 import annonces from "../../assets/annonces.json"
 
 function CardContainer(){
+
     return(
         <section className='card-section'>
             {annonces.map( annonce => {

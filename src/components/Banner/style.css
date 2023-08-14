@@ -1,7 +1,7 @@
-h1{
-    /* font-family: 'Montserrat'; */
+.banner h1{
     font-weight: 500;
-    font-size: 48px;
+    /* font-size: 48px; */
+    font-size: 3rem;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -20,4 +20,30 @@ h1{
     width: 100%;
     border-radius: 25px;
     filter: brightness(75%);
+}
+
+@media (max-width: 1100px) { 
+    .banner h1{
+        font-size: 2.4rem;
+    }
+
+ }
+
+ @media (max-width: 500px) { 
+ 
+    .banner h1{
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
+    .banner img{
+        height: 110px;
+        border-radius: 10px;
+    }
+
+    .a-propos-page .banner img{
+        height: 220px;
+    }
+
+
 }

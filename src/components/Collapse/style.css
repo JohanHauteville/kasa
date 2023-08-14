@@ -2,7 +2,7 @@
     margin-bottom: 0;
     padding: 5px 15px;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     color: #FFF;
     background-color: #FF6060;
     border-radius: 5px;
@@ -29,3 +29,66 @@
     font-size: 20px;
     line-height: 30px;
 }
+
+.logement-page .body-informations .collapse{
+    width: 47%;
+}
+
+.logement-page .body-informations .collapse h3{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 20px;
+    border-radius: 10px;
+}
+
+.logement-page .body-informations .collapse__content{
+    font-size: 18px;
+    line-height: 25px;
+    min-height: 200px;
+}
+
+.logement-page .body-informations .collapse__content p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+@media (max-width: 774px){
+    .collapse{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .collapse i{
+        font-size: 16px;
+        top: 22px;
+    }
+    .collapse h3{
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+    .collapse i{
+        right: 15px;
+    }
+    .collapse__content{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    .logement-page .body-informations .collapse{
+        width: 100%;
+    }
+    .logement-page .body-informations .collapse h3{
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+    .logement-page .body-informations .collapse__content, .logement-page .body-informations .collapse__content p{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        margin-top: 0;
+    }
+    .logement-page .body-informations .collapse__content{
+        min-height: inherit;
+    }
+ }

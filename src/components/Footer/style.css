@@ -17,3 +17,13 @@ footer img{
 footer p{
     color: #fff;
 }
+
+@media (max-width: 774px){
+    footer{
+        padding-bottom: 40px;
+    }
+    footer p{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}

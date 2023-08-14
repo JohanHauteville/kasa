@@ -22,7 +22,7 @@ function Carrousel({title,pictures}){
   
     return(
         <div className='carrousel'>
-            <img src={picture} alt={title} className="logement__cover"/>
+            <img src={picture} alt={title} className="carrousel__cover"/>
             {pictures.length > 1 && 
                 <div>
                     <div className='carrousel__buttons'>
