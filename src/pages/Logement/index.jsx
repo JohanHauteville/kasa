@@ -13,6 +13,7 @@ function Logement(){
     const navigate = useNavigate()
 
     useEffect(()=>{
+        // Si le logement est indéfinit alors on navigue vers la page Error
         if(typeof(logement)==="undefined"){
             navigate("/error")
         }
@@ -20,6 +21,7 @@ function Logement(){
 
     return(
         <>
+            {/* Si "logement" n'est pas définit car introuvable, alors rien ne se génère. */}
             {typeof(logement)==="undefined" ? 
                 ("")
                 :

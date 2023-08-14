@@ -4,11 +4,13 @@ import "./style.css"
 import { useLocation } from "react-router-dom"
 
 function Header(){
+    // Récupère le chemin de la page actuelle
     const actualLocation = useLocation()
     return(
         <header>
             <img src={logo} alt="Logo Kasa"></img>
             <nav>
+                {/* Permet d'ajouter un underline sous le lien en rapport avec la page actuelle */}
                 {actualLocation.pathname==="/" ? 
                 (
                     <Link to="/" className="navLink navLink--actived">Accueil</Link>
@@ -22,7 +24,6 @@ function Header(){
                     <Link to="/a-propos" className="navLink">A Propos</Link>
                 )}
             </nav>
-            {console.log(actualLocation.pathname)}
         </header>
     )
 }

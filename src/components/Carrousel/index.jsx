@@ -1,11 +1,12 @@
 import './style.css'
 import { useState, useEffect } from 'react'
-
+import PropTypes from 'prop-types'
 
 function Carrousel({title,pictures}){
     const [actualIndex, setActualIndex] = useState(0)
     const [picture,setPicture] = useState(pictures[actualIndex])
 
+    // Change l'image si un changement est détecté sur "actualIndex" ou "pictures"
     useEffect(()=>{
         setPicture(pictures[actualIndex])
     },[actualIndex,pictures])
@@ -22,7 +23,10 @@ function Carrousel({title,pictures}){
   
     return(
         <div className='carrousel'>
+            {/* Génère l'image */}
             <img src={picture} alt={title} className="carrousel__cover"/>
+
+            {/* Si le tableau des images est plus grand que 1, on génère les boutons */}
             {pictures.length > 1 && 
                 <div>
                     <div className='carrousel__buttons'>
@@ -34,11 +38,19 @@ function Carrousel({title,pictures}){
                     </span>
                 </div>
             }
-       
-
         </div>
-  
     )
 }
 
 export default Carrousel
+
+
+Carrousel.propTypes = {
+    title: PropTypes.string,
+    pictures: PropTypes.array.isRequired
+}
+
+Carrousel.defaultProps = {
+    title: 'bannières',
+    pictures:[ "/static/media/home.7f6b1f9fd4057cf1b508.png"]
+}

@@ -9,6 +9,7 @@ function APropos() {
         <main className="a-propos-page">
             <Banner picture={bannerAbout} title="" />
             {
+                // Génère l'intégralité des "collapses" depuis le JSON
                 collapses &&
                 collapses.map( collapse => {
                     return <Collapse key={collapse.title} title={collapse.title} content={collapse.content} />
