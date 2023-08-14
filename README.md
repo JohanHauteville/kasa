@@ -1,4 +1,4 @@
-![alt text](https://github.com/JohanHauteville/kasa/src/assets/logo.png?raw=true)
+![alt text](./src/assets/logo.png)
 
 # Projet React : Kasa - Location d'appartements entre particuliers
 
