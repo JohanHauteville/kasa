@@ -1,27 +1,31 @@
-.carrousel{
+.carrousel {
     position: relative;
 }
 
-.carrousel__buttons,.carrousel__right-button,.carrousel__left-button, .carrousel__pagination{
+.carrousel__buttons,
+.carrousel__right-button,
+.carrousel__left-button,
+.carrousel__pagination {
     position: absolute;
 }
 
-.carrousel__buttons{
-
+.carrousel__buttons {
+    cursor: pointer;
     color: #fff;
     font-size: 92px;
     top: 38%;
     width: 100%;
 }
-.carrousel__left-button{
+
+.carrousel__left-button {
     left: 20px;
 }
 
-.carrousel__right-button{
+.carrousel__right-button {
     right: 20px;
 }
 
-.carrousel__pagination{
+.carrousel__pagination {
     bottom: 20px;
     width: 100%;
     /* left: 50%; */
@@ -33,7 +37,7 @@
 
 
 
-.carrousel__cover{
+.carrousel__cover {
     width: 100%;
     height: 415px;
     border-radius: 25px;
@@ -41,24 +45,25 @@
     object-fit: cover;
 }
 
-@media (max-width: 774px){
-    .carrousel__pagination{
+@media (max-width: 774px) {
+    .carrousel__pagination {
         display: none;
     }
 
-    .carrousel__cover{
+    .carrousel__cover {
         height: 250px;
     }
 
-    .carrousel__buttons{
+    .carrousel__buttons {
         font-size: 24px;
         top: 45%;
     }
-    .carrousel__left-button{
+
+    .carrousel__left-button {
         left: 10px;
     }
-    
-    .carrousel__right-button{
+
+    .carrousel__right-button {
         right: 10px;
     }
- }
+}
